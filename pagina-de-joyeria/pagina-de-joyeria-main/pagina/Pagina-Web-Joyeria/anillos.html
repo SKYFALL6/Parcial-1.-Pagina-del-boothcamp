@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Accesorios</title>
+    <style>
+        /* ======= ESTILOS GENERALES ======= */
+        body {
+            background-color: #ffffff; /* Fondo blanco puro */
+            color: #000000; /* Texto negro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ======= SECCIÓN DEL CATÁLOGO ======= */
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .producto {
+            background-color: #f5f5f5; /* Gris claro */
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ======= IMÁGENES ======= */
+        .producto img {
+            width: 70%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* ======= TEXTOS ======= */
+        .producto h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #000000;
+        }
+
+        .producto p {
+            font-size: 14px;
+            color: #333333;
+        }
+
+        /* ======= BOTONES ======= */
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .boton {
+            padding: 10px 15px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .comprar {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .comprar:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .favorito {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .favorito:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* ======= BOTÓN REGRESAR ======= */
+        .btn-regresar {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn-regresar:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="catalogo">
+    <div class="producto">
+        <img src="images/anillo1.jpeg" alt="Anillo Corona de Esmeralda">
+        <h2>Anillo Corona de Esmeralda</h2>
+        <p>Precio: $632,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="images/anillo2.jpeg" alt="Anillo Trono Verde">
+        <h2>Anillo Trono Verde</h2>
+        <p>Precio: $632,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="images/anillo3.jpeg" alt="Anillo Ecos del Bosque">
+        <h2>Anillo Ecos del Bosque</h2>
+        <p>Precio: $730,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="images/anillo4.jpeg" alt="Anillo Esmeralda Eterna">
+        <h2>Anillo Esmeralda Eterna</h2>
+        <p>Precio: $632,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="images/anillo5.jpeg" alt="Anillo Resplandor Oculto">
+        <h2>Anillo Resplandor Oculto</h2>
+        <p>Precio: $780,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="images/anillo6.jpeg" alt="Anillo Verde Celestial">
+        <h2>Anillo Verde Celestial</h2>
+        <p>Precio: $780,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="images/anillo7.jpeg" alt="Anillo Mística Jade">
+        <h2>Anillo Mística Jade</h2>
+        <p>Precio: $780,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="images/anillo8.jpeg" alt="Anillo Guardian del Edén">
+        <h2>Anillo Guardian del Edén</h2>
+        <p>Precio: $780,000 COP</p>
+        <div class="botones">
+            <button class="boton comprar">Agregar</button>
+            <button class="boton favorito">Favorito</button>
+        </div>
+    </div>
+</div>
+
+<br>
+    <button class="btn-regresar" onclick="irAPedidos()">Ver Pedido</button>
+    <a href="index.html" class="btn-regresar">Regresar a Inicio</a>
+
+    <script>
+        function agregarAlCarrito(nombre, precio) {
+            let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+            carrito.push({ nombre, precio });
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            alert(nombre + " agregado al carrito!");
+        }
+
+        function irAPedidos() {
+            window.location.href = "pedidos.html";
+        }
+    </script>
+
+
+    <script>
+        function agregarAlCarrito(nombre, precio) {
+            let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+            carrito.push({ nombre, precio });
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            alert(nombre + " agregado al carrito!");
+        }
+
+        function irAPedidos() {
+            window.location.href = "pedidos.html";
+        }
+
+        // Asignar dinámicamente el evento onclick a los botones "Comprar"
+        document.querySelectorAll('.boton.comprar').forEach(boton => {
+            let producto = boton.closest('.producto'); // Encuentra el contenedor del producto
+            let nombre = producto.querySelector('h2').innerText; // Obtiene el nombre del producto
+            let precioTexto = producto.querySelector('p').innerText; // Obtiene el texto del precio
+            let precio = parseInt(precioTexto.replace(/\D/g, '')); // Extrae el número del precio
+
+            boton.onclick = function () {
+                agregarAlCarrito(nombre, precio);
+            };
+        });
+    </script>
+</body>
+</html>
